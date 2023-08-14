@@ -16,7 +16,7 @@ function App() {
             <div className='bg-white p-4 flex flex-col w-[400px]' >
               <input type="text" placeholder='Email address or phone number' className='bg-transparent  outline-blue-500' />
               <input type="text" placeholder='Password' className='bg-transparent outline-blue-700' />
-              <button className='bg-blue-600 p-2 text-white rounded-lg'>Login</button>
+              <button className='bg-blue-600 p-2 text-white rounded-lg'>Login Button</button>
             </div>
           </div>
         </div>
