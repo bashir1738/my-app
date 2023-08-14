@@ -1,0 +1,257 @@
+a{
+  cursor: pointer;
+}
+a:hover{
+  text-decoration: underline;
+}
+.facebook{
+	/* padding: 180px 90px; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;  
+}
+.facebook-1{
+  float: left;
+}
+.login{
+  /* padding-top: 10px; */
+  float: left;
+}
+.input{
+  padding: 15px;
+  margin-top: 5px;
+  margin-left: -1px;
+  width: 330px;
+  font-size: 16px;
+  background-color:  white;
+}
+.blue-botton{
+  margin-top: 7px;
+  color: white;
+  background-color: RGB(24, 119, 242);
+  border: transparent;
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 150px;
+  padding-right: 150px;
+  border-radius: 5px;
+}
+.blue-botton:hover{
+  cursor: pointer;
+}
+.background{
+  background-color: rgba(237, 235, 242, 0.731);
+  /* width: auto; */
+  height: auto;
+  margin-top: -35px;
+  font-family: 'Facebook Sans', sans-serif;
+  font-family: 'Facebook Narrow App', sans-serif;
+  color: #908e8e;
+}
+h5{
+  margin-top: -49px;
+  font-size: 25px;
+  font-weight: lighter;
+  color: black;
+}
+.header{
+  
+  color: RGB(24, 119, 242);
+  font-weight: 690;
+  font-size: 58px;
+  /* padding-top: 18px; */
+}
+.login{
+  margin-left: 90px;
+  width: 380px;
+  border-radius: 10px;
+  height: auto;
+  padding: 9px;
+  text-align: center;
+  background-color: white;
+  box-shadow: 5px 10px 10px #908e8e;
+}
+.form{
+  margin-top: -40px;
+  margin: auto;
+  width: 410px;
+  border-radius: 10px;
+  height: auto;
+  padding: 9px;
+  text-align: center;
+  background-color: white;
+  box-shadow: 5px 10px 10px #908e8e;
+}
+
+h4{
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.779);
+  margin-top: 5pt;
+}
+.quick{
+  margin-top: -29px;
+  font-size: 15px;
+}
+
+.line{
+  padding-left: 10px;
+  padding-right: 10px;
+  width: auto;
+  margin-top: 15px;
+  border: 0.1px solid #ebe6e6;
+}
+.info{
+  align-items: left;
+  margin-top: 15px;
+
+}
+input {
+  margin-bottom: 10px;
+  padding: 12px;
+  width: auto;
+  margin-left: 10px;
+  background-color:rgb(238, 238, 238);
+  border: 0.1px solid #ccc9c9;
+  border-radius: 5px;
+}
+
+.first{
+  margin-left: -5px;
+}
+.email{
+  width: 362px;
+  margin-left: -3px;
+}
+.password{
+  width: 363px;
+  margin-left: -3px;
+}
+.birth{
+  margin-top: 10px;
+  font-size: 12px;
+  text-align: left;
+  margin-left: 16px;
+}
+select{
+  margin-top: -10px;
+  padding: 8px;
+  width: 120px;
+  margin-left: 12px;
+  border-color: #ccc9c9;
+}
+.day{
+  margin-left: -3px;
+}
+.genders{
+  margin-top: 20px;
+  font-size: 12px;
+  text-align: left;
+  margin-left: 16px;
+  margin-bottom: 10px;
+  
+}
+.radio{
+  margin-left: 12px;
+  height: 20px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  width: 119px;
+  border: 1px solid #a6a5a5;
+}
+.gender {
+  display: flex;
+ list-style-type: none;
+}
+
+label{
+  margin-right: 45px;
+  color: black;
+}
+.circle{
+  position: absolute;
+  margin-bottom: 40px;
+  margin-left: -15px;
+}
+.more{
+  text-align: left;
+  margin-left: 15px;
+  margin-top: 7px;
+  font-size: 12px;
+}
+.more a{
+  color: RGB(24, 119, 242);
+  cursor: pointer;
+}
+.sign-up{
+  font-size: 20px;
+  background-color: rgb(8, 171, 8);
+  color: white;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 7px;
+  border-color: transparent;
+  font-weight: bold;
+  transition: 0.3s ;
+}
+.sign-up:hover{
+  background-color:  rgb(15, 168, 15);
+  color: #fffdfddf;
+}
+h5 a{
+  color: RGB(24, 119, 242);
+  font-size: 17px;
+  font-weight: 500;
+}
+h5 a:hover{
+  text-decoration: none;
+
+}
+.footer{
+  margin-top: 70px;
+  width: auto;
+  height: auto;
+  background-color: white;
+  /* align-items: center; */
+  color: #a6a5a5;
+}
+.footer-link1{
+  font-weight: 600;
+  padding-top: 30px;
+  padding-left: 70px;
+  padding-right: 130px;
+  font-size: 13px;
+}
+.footer-link1 li{
+  
+  margin-left: 10px;
+  list-style-type: none;
+  display: inline;
+}
+.add{
+  font-weight: bold;
+  font-size: 15px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+.footer-line{
+  margin-top: 5px;
+  width: 1000px;
+  align-items: center;
+  border: 1px solid #d9d6d6;
+}
+.footer-link2{
+  font-weight: 600;
+  padding-left: 70px;
+  padding-right: 130px;
+  font-size: 13px;   
+}
+.footer-link2 li{
+  margin-left: 10px;
+  list-style-type: none;
+  display: inline;
+}
