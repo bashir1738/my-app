@@ -1,0 +1,33 @@
+a{
+    cursor: pointer;
+  }
+  a:hover{
+    text-decoration: underline;
+  }
+  .a{
+    font-family: 'Facebook Sans', sans-serif;
+    font-family: 'Facebook Narrow App', sans-serif;
+  }
+
+.popup-overlay {
+  
+  
+  /* left: 0; */
+  /* width: 300%;
+  height: 200px;
+  background-color: rgba(0, 0, 0, 0.5); */
+  /* justify-content: center;
+  align-items: center; */
+  backdrop-filter: blur(2px);
+  /* z-index: 1000; */
+}
+
+
+.close-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+  /* margin-bottom: 10px; */
+}
