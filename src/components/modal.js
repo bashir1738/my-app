@@ -11,7 +11,7 @@
               <h1 className='text-[32px] font-bold'>Sign Up</h1>
               <h2 className="text-gray-600" >It's quick and easy.</h2>
               </div>
-              <button className='mt-[-30px] text-black font-medium text-[30px] fle' onClick={() => onclose()} > x </button>
+              <button className='mt-[-30px] text-black font-medium text-[30px] ' onClick={() => onclose()} > x </button>
             </div>
             <div className='pt-3 pb-3'><div className='bg-gray-200 h-0.5'></div></div>
             <form>
