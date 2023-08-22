@@ -12,10 +12,10 @@ const profile = ({isVisible, onclose}) => {
   if (!isVisible) return null
   return (
     <div className='fixed top-[-10px] ml-[-210px] '>
-      <div className="w-[370px] h-[300px] flex flex-col">
+      <div className="md:w-[370px] w-[350px] h-[300px] flex flex-col">
         <button onClick={() => onclose()} className='place-self-end text-[40px] text-transparent '>x</button>
         <div className='bg-white p-3 rounded xl shadow-xl '>
-          <div className=' mt-2 p-4 w-350px rounded-xl shadow-xl '>
+          <div className=' mt-2 p-4  rounded-xl shadow-xl '>
           <div className='flex flex-row'>
               <div className=" w-[35px] mr-2 h-[40px] rounded-[60px]  cursor-pointer hover:bg-gray-400  bg-gray-300 transition duration-[0.3s] flex justify-center items-center">
                 <FontAwesomeIcon className="text-[25px] text-white cursor-pointer" icon={faUser} />
