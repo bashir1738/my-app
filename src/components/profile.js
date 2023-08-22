@@ -12,7 +12,7 @@ const profile = ({isVisible, onclose}) => {
   if (!isVisible) return null
   return (
     <div className='fixed top-[-10px] ml-[-210px] '>
-      <div className="md:w-[370px] w-[350px] h-[300px] flex flex-col">
+      <div className="md:w-[370px] w-[340px] h-[300px] flex flex-col">
         <button onClick={() => onclose()} className='place-self-end text-[40px] text-transparent '>x</button>
         <div className='bg-white p-3 rounded xl shadow-xl '>
           <div className=' mt-2 p-4  rounded-xl shadow-xl '>
