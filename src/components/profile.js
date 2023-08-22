@@ -11,7 +11,7 @@ import { faGear} from '@fortawesome/free-solid-svg-icons'
 const profile = ({isVisible, onclose}) => {
   if (!isVisible) return null
   return (
-    <div className='fixed top-[-10px] ml-[-210px] '>
+    <div className='fixed top-[-10px] md:ml-[-210px] ml-[-175px] '>
       <div className="md:w-[370px] w-[340px] h-[300px] flex flex-col">
         <button onClick={() => onclose()} className='place-self-end text-[40px] text-transparent '>x</button>
         <div className='bg-white p-3 rounded xl shadow-xl '>

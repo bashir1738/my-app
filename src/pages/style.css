@@ -89,3 +89,9 @@ color : black;
   padding: 0 ;
 }
 }
+.fff{
+  background-image: url(./image/c.jfif);
+  background-size: contain;
+  height: 190px;
+  border-radius: 10px;
+}

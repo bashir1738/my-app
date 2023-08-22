@@ -5,9 +5,10 @@ import './style.css'
 import Modal from "../components/menu" ;
 import Profile from "../components/profile" ;
 import aimage from './image/a.png';
+import Post from "../components/post";
+// import cimage from "./image/c.jfif";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
-import { faUser} from '@fortawesome/free-solid-svg-icons'
+import { faFaceSmile, faPhotoFilm, faUser} from '@fortawesome/free-solid-svg-icons'
 import { faUserGroup} from '@fortawesome/free-solid-svg-icons'
 import { faPeopleGroup} from '@fortawesome/free-solid-svg-icons'
 import { faBookmark} from '@fortawesome/free-solid-svg-icons'
@@ -24,11 +25,13 @@ import { faIdCard} from '@fortawesome/free-solid-svg-icons'
 import { faMessage} from '@fortawesome/free-solid-svg-icons'
 import { faBell} from '@fortawesome/free-solid-svg-icons'
 import { faEllipsis} from '@fortawesome/free-solid-svg-icons'
+import { faPlus} from '@fortawesome/free-solid-svg-icons'
 
 
 export default function Home() {
   const [showModal, setShowModal] = useState(false);
   const [showProfile, setShowProfile] = useState(false);
+  const [showPost, setShowPost] = useState(false);
 
   
   return (
@@ -56,12 +59,15 @@ export default function Home() {
             
           </div>
           <div className=" hidden md:block">
-          <div className="flex flex-cols m-2  ml-[250px] ">
-            <div className="flex justify-center items-center" >
-            <FontAwesomeIcon className="text-blue-500  cursor-pointer text-[24px]" icon={faHouse} />
-            
+          <div className="flex flex-cols m-2  ml-[220px] ">
+            <div className="flex flex-col mt-[4px] justify-center items-center" >
+              <div>
+                 <FontAwesomeIcon className="text-blue-500  cursor-pointer text-[24px]" icon={faHouse} />
+              </div>
+            <div className='pt-[7px] '><div className='bg-blue-500 h-1 w-[80px] '></div></div>
+           
             </div>
-            <div className="ml-[50px] w-[120px] h-9 rounded-lg hover:bg-gray-200 transition duration-[0.3s] flex justify-center items-center">
+            <div className="ml-[30px]  w-[120px] h-9 rounded-lg hover:bg-gray-200 transition duration-[0.3s] flex justify-center items-center">
             <FontAwesomeIcon className="text-[24px]  cursor-pointer" icon={faUserGroup} />
             </div>
             <div className=" w-[120px] h-9 rounded-lg  cursor-pointer hover:bg-gray-200 transition duration-[0.3s] flex justify-center items-center">
@@ -87,8 +93,8 @@ export default function Home() {
               <FontAwesomeIcon className="text-[15px] text-black " icon={faBell} />
               </div>
               <Fragment>
-                <div className=" w-[35px]  h-[40px] rounded-[60px] bg-gray-300 hover:bg-gray-400  cursor-pointer transition duration-[0.3s] flex justify-center items-center">
-                  <FontAwesomeIcon onClick={() => setShowProfile(true)}  className="text-[18px] text-white flex justify-center items-center " icon={faUser}  />
+                <div  onClick={() => setShowProfile(true)} className=" mr-2 w-[35px]  h-[40px] rounded-[60px] bg-gray-300 hover:bg-gray-400  cursor-pointer transition duration-[0.3s] flex justify-center items-center">
+                  <FontAwesomeIcon  className="text-[18px] text-white flex justify-center items-center " icon={faUser}  />
                 </div> 
                 <Profile  isVisible={showProfile} onclose={() =>
                 setShowProfile(false)}/>  
@@ -137,13 +143,64 @@ export default function Home() {
                  <FontAwesomeIcon className=" pl-3 mr-4 w-auto text-green-500"icon={faTree}/>
                  <li >  Tree</li>
               </div>
-              <div className="flex flex-row pt-3 pb-3 hover:bg-slate-200 rounded-2xl transition duration-[0.3s]">
+              <div className="flex flex-row pt-3                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   3 pb-3 hover:bg-slate-200 rounded-2xl transition duration-[0.3s]">
                 <FontAwesomeIcon className=" pl-3 mr-4 w-auto text-red-700" icon={faIdCard} />
                  <li >  cards and payment</li>
               </div>
             </ul>
           </div>
-          <div className='h-screen md:w-2/4 bg-gray-100 w-screen ml-0 md:ml-[296px]  '>
+          <div className=' h-screen md:w-2/4 bg-gray-100 w-screen ml-0 md:ml-[295px]  '>
+            <div className="p-5 flex flex-cols ">
+              <div  className="w-[150px] bg-white h-[240px] rounded-xl shadow-xl cursor-pointer">
+                 <div class="fff">
+                    <div className="p-1 ">
+                      <div className="mt-[165px] p-1 ml-[50px] h-[40px] w-[42px] bg-white rounded-[40px]">
+                        <div className=" w-[35px]  h-[35px] rounded-[60px]  cursor-pointer  bg-blue-500 flex justify-center items-center ">
+                          <FontAwesomeIcon className="text-white" icon={faPlus} />
+                        </div>
+                      </div>
+                     </div >
+                     <p className="text-[14px] mt-[-2px] font-semibold ml-9">create story</p>
+                  </div> 
+              </div>
+              <div  className="w-[150px] ml-2 bg-gray-100 h-[240px] rounded-xl shadow-xl cursor-pointer">
+
+              </div>
+              <div  className="w-[150px] ml-2 bg-gray-100 h-[240px] rounded-xl shadow-xl cursor-pointer">
+
+              </div>
+            </div>
+            <div className="pl-[50px] pt-7 pr-[50px]" >
+              <div className=" bg-white w-auto h-auto p-4 rounded-xl shadow-xl "> 
+              <div className="flex flex-cols">
+                <div className=" mr-2 w-[40px]  h-[40px] rounded-[60px]  transition duration-[0.4s] hover:bg-slate-500 bg-gray-400 cursor-pointer  flex justify-center items-center">
+                  <FontAwesomeIcon  className="text-[22px] text-white flex justify-center items-center " icon={faUser}  />
+                </div>
+                <Fragment>
+                <div  onClick={() => setShowPost(true)}  className="w-full p-2 rounded-2xl shadow-md bg-gray-100 hover:bg-slate-200 cursor-pointer transition duration-[0.4s] text-gray-500 " >
+                  What's on your mind, olamide ?
+                </div>
+                <Post isVisible={showPost} onclose={() =>
+                setShowPost(false)}/>
+                </Fragment>
+              </div>
+                <div className='pt-3 pb-3'><div className='bg-gray-200 h-0.5  '></div></div>
+                <div className="flex flex-cols">
+                  <div className="cursor-pointer flex flex-cols pt-2 pb-2 pl-2 pr-2 hover:bg-slate-200 rounded-xl transition duration-[0.3s]">
+                    <FontAwesomeIcon className=" pl-3 mr-4 w-auto text-red-500" icon={faVideo} />
+                    <p className="mt-[-3px]">Live Video</p>
+                  </div>
+                  <div className="cursor-pointer flex flex-cols pt-2 pb-2 pl-2 pr-2 hover:bg-slate-200 rounded-xl transition duration-[0.3s]">
+                    <FontAwesomeIcon className=" pl-3 mr-4 w-auto text-blue-500" icon={faPhotoFilm} />
+                    <p className="mt-[-3px]">Photo/video</p>
+                  </div>
+                  <div className="cursor-pointer flex flex-cols pt-2 pb-2 pl-2 pr-2 hover:bg-slate-200 rounded-xl transition duration-[0.3s]">
+                    <FontAwesomeIcon className=" pl-3 mr-4 w-auto text-yellow-400" icon={faFaceSmile} />
+                    <p className="mt-[-3px]">Feeling/Activity</p>
+                  </div>
+                </div>
+              </div>
+            </div>
             
           </div>
           <div className=' md:h-screen md:w-1/4 bg-gray-100 h-screen  hidden md:block    '>
