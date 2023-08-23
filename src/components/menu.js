@@ -13,8 +13,8 @@ import { faTree} from '@fortawesome/free-solid-svg-icons'
 const menu = ({isVisible, onclose}) => {
     if (!isVisible) return null
   return (
-    <div className='fixed mt-[-9px] '>
-        <div className='w-full h-screen'>
+    <div className='fixed mt-[-15px] block md:hidden '>
+        <div className='w-full h-full'>
         <button className='place-self-center ml-[113px] text-[45px] text-transparent'   onClick={() => onclose()}>x</button>
             <div className='bg-gray-100 p-2 '    >
             <div className="flex flex-row">

@@ -150,11 +150,11 @@ export default function Home() {
             </ul>
           </div>
           <div className=' h-screen md:w-2/4 bg-gray-100 w-screen ml-0 md:ml-[295px]  '>
-            <div className="p-5 flex flex-cols ">
-              <div  className="w-[150px] bg-white h-[240px] rounded-xl shadow-xl cursor-pointer">
+            <div className="md:p-5 p-3 flex  flex-cols ">
+              <div  className="w-[150px] hover:bg-gray-300 transition duration-[0.4s] hover:bg-opacity-30 bg-white h-[240px] rounded-xl shadow-xl cursor-pointer">
                  <div class="fff">
                     <div className="p-1 ">
-                      <div className="mt-[165px] p-1 ml-[50px] h-[40px] w-[42px] bg-white rounded-[40px]">
+                      <div className="mt-[165px] p-1 ml-[50px] h-[43px] w-[42px] bg-white rounded-[40px]">
                         <div className=" w-[35px]  h-[35px] rounded-[60px]  cursor-pointer  bg-blue-500 flex justify-center items-center ">
                           <FontAwesomeIcon className="text-white" icon={faPlus} />
                         </div>
@@ -166,12 +166,12 @@ export default function Home() {
               <div  className="w-[150px] ml-2 bg-gray-100 h-[240px] rounded-xl shadow-xl cursor-pointer">
 
               </div>
-              <div  className="w-[150px] ml-2 bg-gray-100 h-[240px] rounded-xl shadow-xl cursor-pointer">
+              <div  className="w-[130px] ml-2 bg-gray-100 h-[240px] rounded-xl shadow-xl cursor-pointer">
 
               </div>
             </div>
-            <div className="pl-[50px] pt-7 pr-[50px]" >
-              <div className=" bg-white w-auto h-auto p-4 rounded-xl shadow-xl "> 
+            <div className="md:pl-[50px] md:pr-[50px] pl-[70px]  pr-[70px] pt-7 " >
+              <div className=" bg-white md:w-auto w-[350px] h-auto p-4 rounded-xl shadow-xl "> 
               <div className="flex flex-cols">
                 <div className=" mr-2 w-[40px]  h-[40px] rounded-[60px]  transition duration-[0.4s] hover:bg-slate-500 bg-gray-400 cursor-pointer  flex justify-center items-center">
                   <FontAwesomeIcon  className="text-[22px] text-white flex justify-center items-center " icon={faUser}  />
@@ -185,7 +185,7 @@ export default function Home() {
                 </Fragment>
               </div>
                 <div className='pt-3 pb-3'><div className='bg-gray-200 h-0.5  '></div></div>
-                <div className="flex flex-cols">
+                <div className="md:flex-row flex flex-col">
                   <div className="cursor-pointer flex flex-cols pt-2 pb-2 pl-2 pr-2 hover:bg-slate-200 rounded-xl transition duration-[0.3s]">
                     <FontAwesomeIcon className=" pl-3 mr-4 w-auto text-red-500" icon={faVideo} />
                     <p className="mt-[-3px]">Live Video</p>
