@@ -36,7 +36,7 @@ const Modal = ({ isVisible, onclose }) => {
 
   return (
     <div className='fixed inset-0 overflow-y-hidden  bg-white bg-opacity-20 backdrop-blur-sm flex justify-center '>
-      <div className='w-[420px] md:w-[430px]  '>
+      <div className='w-[340px] md:w-[430px]  '>
         <div className=' bg-white p-3 rounded-lg shadow-xl mt-3' >
           <div className='flex  justify-between'>
             <div>
@@ -173,22 +173,28 @@ const Modal = ({ isVisible, onclose }) => {
             <div>
               <h3 className='text-gray-500 text-xs pt-3 mb-2'>Gender</h3>
               <div className='flex flex-row  '>
-                <div className='mr-3  border border-neutral-400 w-full h-9'>
-                  <div className="pt-1">
-                    <label className="pl-2">Female</label>
-                    <input type="radio" className="" name="gender" value={Gender} onChange={(e) => setGender('female')} />
+                <div className='mr-3  border border-neutral-400 md:w-full w-[98px] h-9'>
+                  <div className="pt-1 flex flex-cols">
+                    <label className="pl-1">Female</label>
+                    <div  className="md:ml-0 ml-[-20px]">
+                      <input className="text-red-300" type="radio"  name="gender" value={Gender} onChange={(e) => setGender('female')} />
+                    </div>
                   </div>
                 </div>
-                <div className='mr-3  border border-neutral-400 w-full h-9'>
-                  <div className="pt-1">
-                    <label className="pl-2">Male</label>
+                <div className='mr-3  border border-neutral-400 md:w-full w-[98px] h-9'>
+                  <div className="pt-1 flex flex-cols">
+                    <label className="pl-1">Male</label>
+                    <div  className="md:ml-0 ml-[-30px]">
                     <input type="radio" className="ml-5" name="gender" value={Gender} onChange={(e) => setGender('male')}/>
                   </div>
+                  </div>
                 </div>
-                <div className=' border border-neutral-400 w-full h-9'>
-                  <div className="pt-1">
-                    <label className="pl-2">Custom</label>
+                <div className=' border border-neutral-400 md:w-full w-[98px] h-9'>
+                  <div className="pt-1 flex flex-cols">
+                    <label className="pl-1">Custom</label>
+                    <div  className="md:ml-0 ml-[-30px]">
                     <input type="radio" name="gender" value={Gender} onChange={(e) => setGender('custom')}/>
+                    </div>
                   </div>
                 </div>
               </div>

@@ -7,7 +7,7 @@ import { IconName } from "react-icons/fa";
 export default function Login() {
   const [showModal, setShowModal] = useState(false);
   return (
-    <div className='overflow-x-hidden overflow-y-hidden'>
+    <div className='overflow-x-hidden'>
       <div className='w-screen h-[720px] bg-gray-100 md:h-[700px] '>
         <div className='grid grid-cols-1 md:grid-cols-2 h-screen w-screen'>
           <div className="flex flex-col items-center md:justify-center">
@@ -17,7 +17,7 @@ export default function Login() {
             </div>
           </div>
           <div className='flex flex-col items-center w-full mt-[30px]  md:justify-center  '>
-            <div className='bg-white p-4 flex flex-col w-[390px] rounded-lg shadow-xl md:mt-[100px]   ' >
+            <div className='bg-white p-4 flex flex-col md:w-[390px] w-[337px]  rounded-lg shadow-xl md:mt-[100px]   ' >
             <form>
                 <div>
                   <input type="text" required placeholder='Email address or phone number ' className='bg-transparent w-full  outline-blue-400 p-3 mb-4  ' />

@@ -41,7 +41,7 @@ export default function Home() {
             <div className="md:mr-0 mr-1">
               <img className="m-2 " src={aimage}/>
             </div>
-            <div class="searchBox md:ml-0 ml-6  ">
+            <div class="searchBox md:ml-0 ml-6 fixed ">
                 <input class="searchInput"type="text" name="" placeholder="Search"/>
                   <button class="searchButton" href="#">
                     <FontAwesomeIcon className=" cursor-pointer text-[15px] " icon={faMagnifyingGlass} />
@@ -149,18 +149,18 @@ export default function Home() {
               </div>
             </ul>
           </div>
-          <div className=' h-screen md:w-2/4 bg-gray-100 w-screen ml-0 md:ml-[295px]  '>
+          <div className=' h-screen md:w-2/4 bg-gray-100 w-screen ml-0 md:ml-[295px] items-center  '>
             <div className="md:p-5 p-3 flex  flex-cols ">
-              <div  className="w-[150px] hover:bg-gray-300 transition duration-[0.4s] hover:bg-opacity-30 bg-white h-[240px] rounded-xl shadow-xl cursor-pointer">
+              <div  className="w-[150px] hover:bg-neutral-50 transition duration-[0.4s] hover:bg-opacity-30 bg-white h-[240px] rounded-xl shadow-xl cursor-pointer">
                  <div class="fff">
-                    <div className="p-1 ">
-                      <div className="mt-[165px] p-1 ml-[50px] h-[43px] w-[42px] bg-white rounded-[40px]">
+                    <div className="p-1 flex justify-center">
+                      <div className=" mt-[163px]  p-1 h-[43px] w-[42px] bg-white rounded-[40px]">
                         <div className=" w-[35px]  h-[35px] rounded-[60px]  cursor-pointer  bg-blue-500 flex justify-center items-center ">
                           <FontAwesomeIcon className="text-white" icon={faPlus} />
                         </div>
                       </div>
                      </div >
-                     <p className="text-[14px] mt-[-2px] font-semibold ml-9">create story</p>
+                     <p className="text-[14px]   font-semibold flex justify-center">create story</p>
                   </div> 
               </div>
               <div  className="w-[150px] ml-2 bg-gray-100 h-[240px] rounded-xl shadow-xl cursor-pointer">
@@ -170,8 +170,8 @@ export default function Home() {
 
               </div>
             </div>
-            <div className="md:pl-[50px] md:pr-[50px] pl-[70px]  pr-[70px] pt-7 " >
-              <div className=" bg-white md:w-auto w-[350px] h-auto p-4 rounded-xl shadow-xl "> 
+            <div className="flex justify-center" >
+              <div className=" bg-white md:w-[500px]  w-[350px] h-auto p-4 rounded-xl shadow-xl "> 
               <div className="flex flex-cols">
                 <div className=" mr-2 w-[40px]  h-[40px] rounded-[60px]  transition duration-[0.4s] hover:bg-slate-500 bg-gray-400 cursor-pointer  flex justify-center items-center">
                   <FontAwesomeIcon  className="text-[22px] text-white flex justify-center items-center " icon={faUser}  />

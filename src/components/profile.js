@@ -55,13 +55,15 @@ const profile = ({isVisible, onclose}) => {
                 </div>
                  <li className='mt-3' >Give feedback</li>  
               </div>
+              <Link  to='/login'>
               <div className="flex flex-row pt-1 pb-1 pl-3 hover:bg-slate-100 rounded-2xl transition duration-[0.4s] ">
                 <div className=" w-[35px] mr-2 h-[40px] rounded-[60px]  cursor-pointer hover:bg-gray-400  bg-gray-300 transition duration-[0.3s] flex justify-center items-center">
                   <FontAwesomeIcon className="text-[20px] text-black" icon={faDoorOpen} />
                 </div>
             
-                 <li className='mt-3' > <Link  to='/login'> log out</Link></li>  
+                 <li className='mt-3' > log out</li>  
               </div>
+              </Link>
             </ul>
           </div>
           <div className='pl-3 text-gray-500 text-[13px] hover:underline cursor-pointer'>
