@@ -20,7 +20,6 @@ const Modal = ({ isVisible, onclose }) => {
     let data = {
       firstname: firstname,
       surname: Surname,
-      dob: date,
       password: Password,
       email: Email,
       gender: Gender,
@@ -46,7 +45,8 @@ const Modal = ({ isVisible, onclose }) => {
             <button className='mt-[-30px] text-black font-medium text-[30px] ' onClick={() => onclose()} > x </button>
           </div>
           <div className='pt-3 pb-3'><div className='bg-gray-200 h-0.5'></div></div>
-          <div className='flex flex-row'>
+          <form>
+          <div className='flex flex-row'>  
               <input required type='text' placeholder='Firstname' className='p-2 w-full outline-gray-200' value={firstname} onChange={(e) => setFirstName(e.target.value)} />
               <input required type='text' placeholder='Surname' className='p-2 w-full ml-3 outline-gray-200' value={Surname} onChange={(e) => setSurName(e.target.value)}  />
             </div>
@@ -210,6 +210,7 @@ const Modal = ({ isVisible, onclose }) => {
                 Sign up
               </button>
             </div>
+            </form>
         </div>
       </div>
     </div>

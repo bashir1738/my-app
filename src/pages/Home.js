@@ -104,8 +104,8 @@ export default function Home() {
             </div>
  
         </div>
-        <div className="flex flex-row mt-[50px] ">
-          <div className='fixed left-0 h-full  md:w-1/4 bg-gray-100 hidden md:block '>
+        <div className="mt-[50px] flex">
+          <div className=' h-screen fixed flex-none w-1/4 bg-gray-100 hidden md:block '>
             <ul className=" m-3 font-bold text-[15px] ">
               <div className="flex flex-row pt-3 pb-3 hover:bg-slate-200 rounded-2xl transition duration-[0.3s] ">
                  <FontAwesomeIcon className=" pl-3 mr-4 w-auto text-gray-500" icon={faUser}/>
@@ -149,7 +149,7 @@ export default function Home() {
               </div>
             </ul>
           </div>
-          <div className=' h-screen md:w-2/4 bg-gray-100 w-screen ml-0 md:ml-[295px] items-center  '>
+          <div className='overflow-x-hidden h-screen md:w-2/4 bg-gray-100 w-screen md:ml-[299px] ml-0 items-center  '>
             <div className="md:p-5 p-3 flex  flex-cols ">
               <div  className="w-[150px] hover:bg-neutral-50 transition duration-[0.4s] hover:bg-opacity-30 bg-white h-[240px] rounded-xl shadow-xl cursor-pointer">
                  <div class="fff">
@@ -203,7 +203,7 @@ export default function Home() {
             </div>
             
           </div>
-          <div className=' md:h-screen md:w-1/4 bg-gray-100 h-screen  hidden md:block    '>
+          <div className=' md:h-screen md:w-1/4  bg-gray-100 h-screen  hidden md:block    '>
               <div className="flex flex-row pt-5 pl-4" >
                 <div className="text-[20px] mr-[90px] font-semibold">Contacts</div>
                <div className="  mr-[10px] cursor-pointer w-9 h-9 flex justify-center items-center rounded-3xl hover:bg-gray-200">

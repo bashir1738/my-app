@@ -13,8 +13,8 @@ const post = ({isVisible, onclose}) => {
             <div className='place-self-center'>
               <h2 className=" text-black text-[20px] font-bold " >Create Post</h2>
             </div>
-            <div className='w-[40px]  h-[40px] rounded-[40px] p-5  cursor-pointer  bg-gray-300 flex justify-center items-center'>  
-              <button className='  mt-[-5px] font-light text-black text-[28px] ' onClick ={() => onclose()} > x </button>
+            <div className='w-[40px]  h-[40px] rounded-[40px] p-5  cursor-pointer  bg-gray-300 flex justify-center items-center' onClick ={() => onclose()}>  
+              <button className='  mt-[-5px] font-light text-black text-[28px] '  > x </button>
             </div>
           </div>
           <div className='pt-3 pb-3'><div className='bg-gray-200 h-0.5'></div></div>
@@ -27,7 +27,7 @@ const post = ({isVisible, onclose}) => {
               <div className='bg-gray-200 p-[1px] pl-4 rounded-xl cursor-pointer'>
                 <FontAwesomeIcon className=" text-[10px] mr-1 w-auto text-black " icon={faUserGroup}/> 
                 <a className='text-[13px]'>Friends</a>  
-                <a className='text-[11px]'> ▼</a>
+                <a className='text-[10px]'> ▼</a>
               </div>
             </div>  
           </div> 
